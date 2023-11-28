@@ -11,10 +11,12 @@ spring:
             issuer-uri: https://keycloak.createyourevent.space/realms/jhipster
         registration:
           oidc:
-            client-id: web_app
-            client-secret: 0CMtGDXKuTGC7d89brAPw8I5YVgzRbOS
+            client-id: jhipster-registry
+            client-secret: 8gwv7UlagY4sXWYOgZNY5cGfo08aesgZ
             scope: openid,profile,email
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: https://registry.createyourevent.space/eureka/
